@@ -1,0 +1,278 @@
+body {
+    color: rgba(0,0,0,0.8);
+    font-family: Georgia, 'Times New Roman', serif;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+a {
+    color: #c0392b;
+    transition: color 0.3s ease;
+}
+
+a img {
+    transition: opacity 0.3s ease;
+}
+
+a:hover {
+    color: #e74c3c;
+}
+
+a:hover img {
+    opacity: 0.8;
+}
+
+code {
+    background-color: #eee;
+    font-size: 0.7em;
+    padding: 0 8px;
+}
+
+code.highlighter-rouge {
+    font-size: 1em;
+}
+
+.highlight code {
+    background-color: #002b36;
+    padding: 0;
+}
+
+img + em, img + br + em {
+    clear: both;
+    display: block;
+    font-size: 14px;
+}
+
+#containter {
+    min-height: 100%;
+    position: relative;
+}
+
+header {
+    position: fixed;
+    height: 100%;
+    width: 23%;
+    background-color: #2c3e50; /* midnight blue */
+    padding-top: 80px;
+    text-align: center;
+}
+
+/*header #avatar {
+    border-radius: 15px;
+    border: 5px solid #34495e;
+    width: 50%;
+}*/
+
+#blog-name {
+    margin: 30px 0 0 0;
+}
+
+#blog-name a{
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    color: #fff;
+    font-weight: 800;
+    font-size: 2.5em;
+    text-decoration: none;
+}
+
+#blog-name a:hover {
+    color: #c0392b;
+}
+
+nav {
+    margin: 20px 0 0 0;
+}
+
+nav a {
+    color: #7f8c8d;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 1.3em;
+    line-height: 2em;
+}
+
+nav a:hover {
+    color: #c0392b;
+}
+
+#twitter-and-stuff {
+    margin-top: 20px;
+}
+
+#twitter-and-stuff a {
+    color: #7f8c8d;
+    opacity: 0.3;
+    margin-right: 10px;
+}
+
+#twitter-and-stuff a:hover {
+    opacity: 0.7;
+}
+
+#twitter-and-stuff a:last-child {
+    margin-right: 0;
+}
+
+#main-content {
+    position: absolute;
+    right: 0;
+    width: 77%;
+}
+
+/* post, page, footer */
+article, #page {
+    padding: 0 80px;
+    margin: 80px 0;
+}
+
+footer {
+    padding: 0 80px 40px 80px;
+}
+
+h1, .meta, .post-content, .page-content, .excerpt-content, .footer-content {
+    max-width: 700px;
+}
+
+h1 {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 4em;
+    padding-bottom: 15px;
+}
+
+h2 {
+    border-bottom: 1px solid #ccc;
+    margin-top: 40px;
+    font-weight: 800;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+h3 {
+    font-weight: 800;
+    margin: 30px 0 -15px 0;
+}
+
+a.excerpt-link {
+    color: rgba(0,0,0,0.8);
+    text-decoration: none;
+}
+
+a.excerpt-link:hover {
+    color: #c0392b;
+}
+
+ol, ul {
+    margin-top: 30px;
+    padding-left: 30px;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+.meta {
+    color: rgba(0, 0, 0, 0.45);
+    font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+.post-content, .page-content, .excerpt-content {
+    line-height: 1.4em;
+    font-size: 1.5em;
+    text-align: justify;
+    letter-spacing: 0.01rem;
+}
+
+.post-content p, .page-content p, .excerpt-content p {
+    margin-top: 30px;
+}
+
+.more {
+    display: none;
+}
+
+.read-more {
+    display: block;
+    margin: 20px 0;
+}
+
+.highlight {
+    margin-top: 20px;
+    border: 3px solid #2c3e50;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+pre {
+    width: 100%;
+}
+
+.highlight code {
+    overflow-x: auto;
+    display: block;
+}
+
+blockquote {
+    border-left: 8px solid #c0392b;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+cite {
+    color: #999;
+    font-size: 0.84em;
+}
+
+.share-buttons {
+    max-width: 700px;
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+.share-buttons p {
+    line-height: 32px;
+    vertical-align: top;
+}
+
+#disqus_thread {
+    padding: 0 80px;
+    margin-bottom: 80px;
+}
+
+#disqus_thread iframe {
+    max-width: 700px;
+}
+
+@media (max-width: 740px) {
+    h1 {
+        font-size: 3.2em;
+    }
+
+    header {
+        position: relative;
+        width: 100%;
+        background-color: #2c3e50;
+        padding: 40px 0;
+    }
+
+    header #avatar {
+        width: 150px;
+    }
+
+    #main-content {
+        width: 100%;
+    }
+
+    article, #page {
+        padding: 0 20px;
+        margin: 40px 0;
+    }
+
+    #disqus_thread {
+        padding: 0 20px;
+    }
+
+    footer {
+        padding: 0 20px 40px 20px;
+    }
+}

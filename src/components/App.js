@@ -5,12 +5,15 @@ import { Link, IndexLink } from 'react-router';
 // version of hot reloading won't hot reload a stateless
 // component at the top-level.
 class App extends React.Component {
+  /*propTypes : {
+    children: PropTypes.element
+  },*/
   render() {
     return (
       <div>
         <IndexLink to="/">Home</IndexLink>
         {' | '}
-        <Link to="/fuel-savings">Demo App</Link>
+        <Link to="/dashboard">Dashboard</Link>
         {' | '}
         <Link to="/about">About</Link>
         <br/>
@@ -19,9 +22,5 @@ class App extends React.Component {
     );
   }
 }
-
-App.propTypes = {
-  children: PropTypes.element
-};
 
 export default App;
