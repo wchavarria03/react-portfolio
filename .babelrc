@@ -1,6 +1,9 @@
 {
+  "plugins": [
+    "transform-class-properties"
+  ],
   "presets": [
-    "latest",
+    ["es2015", { "modules": false }],
     "react",
     "stage-1"
   ],
@@ -8,12 +11,6 @@
     "development": {
       "presets": [
         "react-hmre"
-      ]
-    },
-    "production": {
-      "plugins": [
-        "transform-react-constant-elements",
-        "transform-react-remove-prop-types"
       ]
     }
   }

@@ -3,7 +3,8 @@
   "extends": [
     "eslint:recommended",
     "plugin:import/errors",
-    "plugin:import/warnings"
+    "plugin:import/warnings",
+    "plugin:react/recommended"
   ],
   "plugins": [
     "react"
@@ -13,29 +14,28 @@
     "ecmaVersion": 6,
     "sourceType": "module",
     "ecmaFeatures": {
-      "jsx": true,
-      "experimentalObjectRestSpread": true
+      "jsx": true
     }
   },
   "env": {
-    "es6": true,
     "browser": true,
+    "commonjs": true,
+    "es6": true,
     "node": true,
-    "jquery": true,
-    "mocha": true
   },
   "rules": {
-    "quotes": 0,
-    "no-console": 1,
-    "no-debugger": 1,
-    "no-var": 1,
-    "semi": [1, "always"],
-    "no-trailing-spaces": 0,
     "eol-last": 0,
-    "no-underscore-dangle": 0,
-    "no-alert": 0,
-    "no-lone-blocks": 0,
+    "indent": ["error", 2],
     "jsx-quotes": 1,
+    "quotes": ["error", "single"],
+    "no-alert": 0,
+    "no-debugger": 1,
+    "no-console": 0,
+    "no-lone-blocks": 0,
+    "no-trailing-spaces": 0,
+    "no-underscore-dangle": 0,
+    "no-unused-vars": ["warn"],
+    "no-var": 1,
     "react/display-name": [ 1, {"ignoreTranspilerName": false }],
     "react/forbid-prop-types": [1, {"forbid": ["any"]}],
     "react/jsx-boolean-value": 0,
@@ -66,7 +66,8 @@
     "import/extensions": 1,
     "react/self-closing-comp": 1,
     "react/sort-comp": 1,
-    "react/jsx-wrap-multilines": 1
+    "react/jsx-wrap-multilines": 1,
+    "semi": ["error", "always"]
   },
   "globals": {
   }

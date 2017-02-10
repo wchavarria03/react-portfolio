@@ -59,7 +59,7 @@ Unfortunately, scripts in package.json can't be commented inline because the JSO
 │   ├── startMessage.js       # Display message when development build starts
 │   ├── testSetup.js          # Configures mocha
 │   └── analyzeBundle.js      # Analyzes the webpack bundle
-├── webpack.config.dev.js     # Configures webpack for development builds
+├── webpack.config.js     # Configures webpack for development builds
 └── webpack.config.prod.js    # Configures webpack for production builds
 ```
 

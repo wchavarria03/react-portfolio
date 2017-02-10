@@ -17,7 +17,7 @@ class Dashboard extends React.Component {
 
 Dashboard.propTypes = {
   txt: React.PropTypes.string,
-  car: React.PropTypes.string
+  car: React.PropTypes.string,
 };
 
 Dashboard.defaultProps = {
